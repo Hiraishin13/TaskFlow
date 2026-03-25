@@ -1,98 +1,79 @@
 <!doctype html>
-<html lang="fr">
+<html class="light" lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="TaskFlow : gestion intelligente des tâches pour freelances et petites équipes." />
-    <title>TaskFlow - Landing Page</title>
+    <meta
+      name="description"
+      content="TaskFlow : organisez vos projets, suivez vos tâches, collaborez simplement."
+    />
+    <title>TaskFlow</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand" aria-label="TaskFlow">
-          <span class="brand-mark" aria-hidden="true">TF</span>
-          <span class="brand-name">TaskFlow</span>
-        </div>
+    <header class="top-bar">
+      <div class="container top-bar-inner">
+        <a class="brand" href="#" aria-label="TaskFlow accueil">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-name text-gradient-primary">TaskFlow</span>
+        </a>
 
-        <nav class="nav" aria-label="Navigation principale">
-          <a class="nav-link" href="#features">Fonctionnalités</a>
-          <a class="nav-link" href="#pricing">Tarifs</a>
-          <a class="nav-link" href="#testimonials">Témoignages</a>
-          <a class="nav-link" href="#contact">Contact</a>
+        <nav class="top-nav" aria-label="Navigation principale">
+          <a class="top-nav-link top-nav-link-active" href="#features">Fonctionnalités</a>
+          <a class="top-nav-link" href="#how">Comment ça marche</a>
+          <a class="top-nav-link" href="#pricing">Tarifs</a>
+          <a class="top-nav-link" href="#contact">Contact</a>
         </nav>
 
-        <div class="header-actions">
-          <a class="btn btn-ghost" href="#pricing">Voir les offres</a>
-        </div>
       </div>
+      <div class="top-bar-line" aria-hidden="true"></div>
     </header>
 
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-inner">
+    <main id="main" class="main-offset">
+      <section class="hero-section">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <div class="container hero-layout hero-layout-centered">
           <div class="hero-copy">
-            <p class="hero-pill">Gestion de tâches + IA</p>
-            <h1 id="hero-title">Organisez, suivez et collaborez plus vite avec TaskFlow.</h1>
-            <p class="hero-subtitle">
-              TaskFlow aide les freelances et petites équipes à structurer leurs projets, automatiser le suivi et
-              gagner en productivité grâce à l’IA.
+            <p class="hero-kicker">Gestion de tâches</p>
+            <h1 class="hero-title font-headline">Organisez vos projets sans perdre le fil.</h1>
+            <p class="hero-lead">
+              Pour les freelances et petites équipes : listes claires, priorités visibles, moins de va-et-vient.
             </p>
-
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#contact">Commencer gratuitement</a>
-              <a class="btn btn-secondary" href="#features">Découvrir les fonctionnalités</a>
-            </div>
-
-            <div class="hero-stats" role="list" aria-label="Chiffres clés">
-              <div class="stat" role="listitem">
-                <span class="stat-value">+120</span>
-                <span class="stat-label">équipes équipées</span>
-              </div>
-              <div class="stat" role="listitem">
-                <span class="stat-value">-35%</span>
-                <span class="stat-label">temps de suivi</span>
-              </div>
-              <div class="stat" role="listitem">
-                <span class="stat-value">Temps réel</span>
-                <span class="stat-label">collaboration</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="card glow">
-              <div class="card-header">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="card-body">
-                <div class="skeleton-row"></div>
-                <div class="skeleton-row short"></div>
-                <div class="task-row">
-                  <span class="checkbox"></span>
-                  <span class="task-text">Définir la roadmap</span>
-                  <span class="tag">IA</span>
-                </div>
-                <div class="task-row">
-                  <span class="checkbox done"></span>
-                  <span class="task-text">Planifier la prochaine sprint</span>
-                  <span class="tag tag-blue">Pro</span>
-                </div>
-                <div class="task-row">
-                  <span class="checkbox"></span>
-                  <span class="task-text">Valider les témoignages</span>
-                  <span class="tag tag-purple">Team</span>
+            <div class="hero-preview" role="region" aria-label="Exemple de suivi de projet">
+              <div class="hero-preview-head">
+                <p class="hero-preview-title">Projet / mai</p>
+                <div class="hero-preview-meta">
+                  <span class="hero-meta-pill">12 tâches</span>
+                  <span class="hero-meta-pill hero-meta-pill-accent">3 en cours</span>
                 </div>
               </div>
-              <div class="card-footer">
-                <span class="progress-label">Progression</span>
-                <span class="progress-value">78%</span>
-                <div class="progress">
-                  <span class="progress-bar" style="width: 78%"></span>
+              <ul class="hero-task-list">
+                <li class="hero-task">
+                  <span class="hero-task-cb" aria-hidden="true"></span>
+                  <span>Périmètre produit</span>
+                </li>
+                <li class="hero-task hero-task-done">
+                  <span class="hero-task-cb hero-task-cb-on" aria-hidden="true"></span>
+                  <span>Maquettes v1</span>
+                </li>
+                <li class="hero-task">
+                  <span class="hero-task-cb" aria-hidden="true"></span>
+                  <span>Revue équipe</span>
+                </li>
+              </ul>
+              <div class="hero-progress-block">
+                <div class="hero-progress-row">
+                  <span class="hero-progress-label">Avancement</span>
+                  <span class="hero-progress-pct">46&nbsp;%</span>
+                </div>
+                <div class="hero-progress-track">
+                  <span class="hero-progress-fill"></span>
                 </div>
               </div>
             </div>
@@ -100,251 +81,244 @@
         </div>
       </section>
 
-      <section id="features" class="section section-features" aria-labelledby="features-title">
+      <section id="features" class="section-bento">
         <div class="container">
-          <div class="section-head">
-            <h2 id="features-title">Fonctionnalités clés</h2>
-            <p>Une expérience claire et rapide, pensée pour passer de l’idée à l’exécution.</p>
-          </div>
+          <header class="bento-head">
+            <h2 class="font-headline section-title">Puissance et simplicité</h2>
+            <p class="section-lead">Une base claire pour les équipes qui veulent avancer sans surcharge.</p>
+          </header>
 
-          <div class="grid features-grid">
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">⚡</div>
-              <h3>Organisation intelligente</h3>
-              <p>
-                Structure projets, tâches et étapes en quelques secondes. Réduisez le bruit et concentrez-vous
-                sur l’essentiel.
-              </p>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">🧠</div>
-              <h3>Assistance IA</h3>
-              <p>
-                Des suggestions pour prioriser, estimer et rédiger des checklists. Moins de friction, plus de
-                résultats.
-              </p>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">🤝</div>
-              <h3>Collaboration en temps réel</h3>
-              <p>
-                Partagez l’avancement, discutez directement et suivez les changements avec un historique lisible.
-              </p>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">📈</div>
-              <h3>Tableau de bord productivité</h3>
-              <p>
-                Visualisez l’état des projets et améliorez votre rythme de travail grâce à des indicateurs
-                simples.
-              </p>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">🔔</div>
-              <h3>Rappels et automatisations</h3>
-              <p>
-                Déclenchez des rappels intelligents pour ne rien oublier et garder vos deadlines sous contrôle.
-              </p>
-            </article>
-
-            <article class="feature">
-              <div class="feature-icon" aria-hidden="true">🔒</div>
-              <h3>Sécurité & contrôle</h3>
-              <p>
-                Des permissions claires et une structure fiable pour travailler sereinement en équipe.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" class="section section-pricing" aria-labelledby="pricing-title">
-        <div class="container">
-          <div class="section-head">
-            <h2 id="pricing-title">Tarifs</h2>
-            <p>Trois offres pour s’adapter à votre façon de travailler.</p>
-          </div>
-
-          <div class="grid pricing-grid" role="list" aria-label="Offres">
-            <article class="plan" role="listitem">
-              <div class="plan-top">
-                <h3>Free</h3>
-                <p class="plan-price">0€ <span>/ mois</span></p>
-                <p class="plan-desc">Pour démarrer simplement.</p>
+          <div class="bento-grid">
+            <article class="bento-card bento-span-7 bento-card-white">
+              <div class="bento-card-inner">
+                <span class="bento-icon" aria-hidden="true">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                    />
+                  </svg>
+                </span>
+                <h3 class="font-headline bento-title">Prioriser sans se perdre</h3>
+                <p class="bento-desc">
+                  Des rappels et un ordre suggéré quand la liste grossit. Vous gardez la main sur les choix.
+                </p>
               </div>
-              <ul class="plan-list" aria-label="Fonctionnalités Free">
-                <li>Jusqu’à 3 projets</li>
-                <li>Suivi basique des tâches</li>
-                <li>Collaboration limitée</li>
-                <li>Support par email</li>
-              </ul>
-              <a class="btn btn-secondary w-full" href="#contact">Choisir Free</a>
+              <span class="bento-watermark bento-watermark-arrow" aria-hidden="true"></span>
             </article>
 
-            <article class="plan plan-featured" role="listitem">
-              <div class="badge">Recommandé</div>
-              <div class="plan-top">
-                <h3>Pro</h3>
-                <p class="plan-price">12€ <span>/ mois</span></p>
-                <p class="plan-desc">Pour accélérer au quotidien.</p>
-              </div>
-              <ul class="plan-list" aria-label="Fonctionnalités Pro">
-                <li>Projets illimités</li>
-                <li>IA pour priorisation</li>
-                <li>Collaboration en temps réel</li>
-                <li>Automatisations & rappels</li>
-              </ul>
-              <a class="btn btn-primary w-full" href="#contact">Passer à Pro</a>
-            </article>
-
-            <article class="plan" role="listitem">
-              <div class="plan-top">
-                <h3>Enterprise</h3>
-                <p class="plan-price">Sur devis</p>
-                <p class="plan-desc">Pour les équipes qui scalent.</p>
-              </div>
-              <ul class="plan-list" aria-label="Fonctionnalités Enterprise">
-                <li>Gestion multi-équipes</li>
-                <li>Sécurité avancée</li>
-                <li>Support prioritaire</li>
-                <li>Personnalisation & SLA</li>
-              </ul>
-              <a class="btn btn-ghost w-full" href="#contact">Contacter l’équipe</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section section-testimonials" aria-labelledby="testimonials-title">
-        <div class="container">
-          <div class="section-head">
-            <h2 id="testimonials-title">Témoignages</h2>
-            <p>Ce que disent nos utilisateurs (fictifs) après adoption.</p>
-          </div>
-
-          <div class="grid testimonials-grid" role="list" aria-label="Témoignages">
-            <article class="testimonial" role="listitem">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">AM</div>
-                <div>
-                  <h3 class="testimonial-name">Alice M.</h3>
-                  <p class="testimonial-role">Freelance UX</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “TaskFlow m’aide à passer directement de l’idée au plan d’action. Le tableau de bord est
-                super clair et l’IA me fait gagner un temps fou.”
-              </p>
-              <div class="stars" aria-label="Note : 5 sur 5" role="img">★★★★★</div>
-            </article>
-
-            <article class="testimonial" role="listitem">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">JB</div>
-                <div>
-                  <h3 class="testimonial-name">Julien B.</h3>
-                  <p class="testimonial-role">Chef de projet</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “On a enfin une vue unique sur l’avancement. La collaboration en temps réel réduit les
-                aller-retours et simplifie les validations.”
-              </p>
-              <div class="stars" aria-label="Note : 5 sur 5" role="img">★★★★★</div>
-            </article>
-
-            <article class="testimonial" role="listitem">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">SK</div>
-                <div>
-                  <h3 class="testimonial-name">Sarah K.</h3>
-                  <p class="testimonial-role">Responsable Ops</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “Les rappels et automatisations sont redoutables. On a amélioré notre cadence en quelques
-                semaines, sans complexité.”
-              </p>
-              <div class="stars" aria-label="Note : 5 sur 5" role="img">★★★★★</div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-contact" aria-labelledby="contact-title">
-        <div class="container">
-          <div class="section-head">
-            <h2 id="contact-title">Contact</h2>
-            <p>Laissez-nous un message, on vous répond rapidement.</p>
-          </div>
-
-          <div class="contact-card">
-            <form class="contact-form" action="#" method="post">
-              <div class="form-row">
-                <div class="field">
-                  <label for="name">Nom</label>
-                  <input id="name" name="name" type="text" placeholder="Votre nom" autocomplete="name" required />
-                </div>
-
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="vous@exemple.com"
-                    autocomplete="email"
-                    required
+            <article class="bento-card bento-span-5 bento-card-purple">
+              <span class="bento-icon bento-icon-on-purple" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.48 0-2.75.81-3.45 2H5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h6v2H8v2h8v-2h-3v-2h3c1.1 0 2-.9 2-2v-1.22c.59-.31 1.07-.84 1.38-1.48.22.13.46.23.72.31.97.31 1.99-.21 2.3-1.18.31-.97-.21-1.99-1.18-2.3-.48-.15-.97-.06-1.36.2zm-4.5 0c-.83 0-1.5-.67-1.5-1.5S10.67 8 11.5 8s1.5.67 1.5 1.5S12.33 11 11.5 11z"
                   />
-                </div>
-              </div>
+                </svg>
+              </span>
+              <h3 class="font-headline bento-title">Collaborer en temps réel</h3>
+              <p class="bento-desc bento-desc-muted-purple">
+                Mises à jour visibles pour toute l’équipe, sans multiplier les fils de discussion.
+              </p>
+            </article>
 
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Dites-nous comment TaskFlow peut vous aider..."
-                  required
-                ></textarea>
-              </div>
+            <article class="bento-card bento-span-4-md bento-card-white">
+              <span class="bento-icon bento-icon-primary" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-headline bento-title-sm">Suivre les tâches</h3>
+              <p class="bento-desc bento-desc-sm">Listes et colonnes sobres pour voir l’état d’un coup d’œil.</p>
+            </article>
 
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">Envoyer le message</button>
-                <p class="form-hint">Aucune donnée n’est envoyée : c’est une démo front uniquement.</p>
+            <article class="bento-card bento-span-8 bento-card-muted bento-row">
+              <div>
+                <h3 class="font-headline bento-title-sm">Interface posée</h3>
+                <p class="bento-desc bento-desc-sm">Peu de bruit visuel, pour se concentrer sur le travail.</p>
               </div>
-            </form>
+              <div class="bento-bars" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <section id="how" class="section-how">
+        <div class="container">
+          <header class="section-head centered">
+            <p class="section-label">Comment ça marche</p>
+            <h2 class="font-headline section-title">Trois étapes</h2>
+          </header>
+          <div class="how-grid">
+            <article class="how-card">
+              <div class="how-card-head">
+                <span class="how-css-icon how-css-icon-folder" aria-hidden="true"></span>
+                <span class="how-num">1</span>
+              </div>
+              <h3 class="font-headline">Créer un projet</h3>
+              <p>Nom, objectif, c’est parti.</p>
+            </article>
+            <article class="how-card">
+              <div class="how-card-head">
+                <span class="how-css-icon how-css-icon-checklist" aria-hidden="true"></span>
+                <span class="how-num">2</span>
+              </div>
+              <h3 class="font-headline">Ajouter des tâches</h3>
+              <p>Checklists simples, étapes claires.</p>
+            </article>
+            <article class="how-card">
+              <div class="how-card-head">
+                <span class="how-css-icon how-css-icon-share" aria-hidden="true"></span>
+                <span class="how-num">3</span>
+              </div>
+              <h3 class="font-headline">Suivre et partager</h3>
+              <p>Avancement lisible pour toute l’équipe.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section-pricing">
+        <div class="container">
+          <header class="section-head centered">
+            <h2 class="font-headline section-title">Tarifs</h2>
+            <p class="section-lead">Choisissez ce qui correspond à votre rythme.</p>
+          </header>
+
+          <div class="pricing-row">
+            <article class="price-card">
+              <h3 class="font-headline price-name">Individuel</h3>
+              <div class="price-amount">
+                <span class="price-value">$0</span><span class="price-period">/mois</span>
+              </div>
+              <ul class="price-list">
+                <li class="price-ok">Jusqu’à 3 projets</li>
+                <li class="price-ok">Tâches et checklists</li>
+                <li class="price-off">Suggestions avancées</li>
+              </ul>
+              <a class="btn btn-outline-dark w-full" href="#contact">Commencer</a>
+            </article>
+
+            <article class="price-card price-card-pro">
+              <span class="price-badge">Populaire</span>
+              <h3 class="font-headline price-name">Équipe</h3>
+              <div class="price-amount price-amount-light">
+                <span class="price-value">$12</span><span class="price-period">/mois</span>
+              </div>
+              <ul class="price-list price-list-light">
+                <li>Projets illimités</li>
+                <li>Collaboration temps réel</li>
+                <li>Priorisation assistée</li>
+                <li>Rappels et automatisations</li>
+              </ul>
+              <a class="btn btn-on-primary w-full" href="#contact">Passer au Pro</a>
+            </article>
+
+            <article class="price-card">
+              <h3 class="font-headline price-name">Entreprise</h3>
+              <div class="price-amount">
+                <span class="price-value price-value-sm">Sur devis</span>
+              </div>
+              <ul class="price-list">
+                <li class="price-ok">Multi-équipes</li>
+                <li class="price-ok">Sécurité renforcée</li>
+                <li class="price-ok">Support dédié</li>
+              </ul>
+              <a class="btn btn-outline-muted w-full" href="#contact">Contacter</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-testi">
+        <div class="container testi-layout">
+          <div class="testi-intro">
+            <h2 class="font-headline section-title">Des équipes qui s’y retrouvent</h2>
+            <p class="section-lead">Témoignages fictifs pour la maquette.</p>
+            <div class="testi-faces" aria-hidden="true">
+              <span class="testi-face">C</span>
+              <span class="testi-face">J</span>
+              <span class="testi-face">M</span>
+              <span class="testi-faces-label">Petites équipes, vrais retours</span>
+            </div>
+          </div>
+          <div class="testi-cards">
+            <blockquote class="glass-panel testi-card">
+              <p class="testi-text">Avant, on oubliait des tâches. Là, la liste tient debout.</p>
+              <footer class="testi-foot">
+                <span class="testi-initials" aria-hidden="true">CL</span>
+                <div>
+                  <strong>Claire</strong>
+                  <span class="testi-role">Freelance graphiste</span>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="glass-panel testi-card testi-card-offset">
+              <p class="testi-text">
+                L’avancement est lisible pour tout le monde, moins de réunions de suivi.
+              </p>
+              <footer class="testi-foot">
+                <span class="testi-initials testi-initials-alt" aria-hidden="true">JU</span>
+                <div>
+                  <strong>Julien</strong>
+                  <span class="testi-role">Product manager</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-contact">
+        <div class="contact-blob" aria-hidden="true"></div>
+        <div class="container contact-narrow">
+          <header class="section-head centered">
+            <h2 class="font-headline section-title">Une question ?</h2>
+            <p class="section-lead">Écrivez-nous, on vous répond vite.</p>
+          </header>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label class="field-label" for="name">Nom</label>
+                <input id="name" name="name" type="text" placeholder="Jean Dupont" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label class="field-label" for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jean@exemple.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label" for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+            </div>
+            <button class="btn btn-primary-gradient w-full btn-lg" type="submit">Envoyer</button>
+            <p class="form-note">Démo statique : aucune donnée n’est envoyée.</p>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <span class="brand-mark" aria-hidden="true">TF</span>
-          <span class="footer-title">TaskFlow</span>
-          <p class="footer-subtitle">Productivité, collaboration et IA.</p>
-        </div>
-
-        <div class="footer-links" aria-label="Liens sociaux">
-          <a class="social" href="#" rel="noopener">Twitter (fictif)</a>
-          <a class="social" href="#" rel="noopener">LinkedIn (fictif)</a>
-          <a class="social" href="#" rel="noopener">GitHub (fictif)</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p>© 2026 TaskFlow. Tous droits réservés.</p>
-        </div>
+      <div class="container footer-centered">
+        <p class="font-headline footer-logo text-gradient-primary">TaskFlow</p>
+        <nav class="footer-links" aria-label="Pied de page">
+          <a href="#features">Fonctionnalités</a>
+          <a href="#pricing">Tarifs</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">Mentions</a>
+        </nav>
+        <p class="footer-copy">© 2026 TaskFlow. Gad Mokata.</p>
       </div>
     </footer>
   </body>
 </html>
-

@@ -1,64 +1,48 @@
-# 🚀 TaskFlow Landing Page
+# TaskFlow – Landing page
 
-Landing page moderne et responsive pour **TaskFlow**, une application intelligente de gestion de tâches destinée aux freelances et petites équipes.
+Landing page responsive pour **TaskFlow**, application de gestion de tâches pour freelances et petites équipes.
 
----
+## Objectif
 
-## 🎯 Objectif
-Ce projet a été réalisé dans le cadre d’un test technique pour un poste de **Développeur Frontend**.
+Projet réalisé dans le cadre d’un test technique pour un poste de développeur frontend.
 
----
+## Technologies
 
-## 🛠️ Technologies utilisées
-- HTML5 (structure sémantique)
-- CSS3 (Flexbox, design responsive)
-- **Aucune librairie ou framework** utilisé
+- HTML5 (balises sémantiques)
+- CSS3 (mise en page responsive)
+- Pas de framework (pas de Bootstrap, Tailwind, etc.)
+- Pas de polices ni d’images hébergées sur un CDN : typo système et visuels en CSS / SVG inline
 
----
+## Contenu de la page
 
-## 📱 Fonctionnalités
-- Design 100% responsive (mobile & desktop)
-- Hero section avec appel à l’action
-- Présentation des fonctionnalités
-- Section tarifs (Free, Pro, Enterprise)
-- Témoignages utilisateurs
+- Mise en page adaptée mobile et bureau
+- Hero avec appel à l’action
+- Fonctionnalités
+- Comment ça marche
+- Tarifs (Free, Pro, Enterprise)
+- Témoignages
 - Formulaire de contact
-- Footer avec réseaux sociaux fictifs
+- Pied de page avec liens fictifs
 
----
-
-## 📂 Structure du projet
+## Structure
 
 ```
-taskflow-landing-page/
-│
 ├── index.html
 ├── css/
 │   └── style.css
 ├── images/
-│   └── (tes images)
 └── README.md
 ```
 
----
+## Aperçu
 
-## ✨ Aperçu
+Ajouter une capture d’écran ici si besoin, par exemple `images/preview.png`.
 
-Ajoute ici une capture d’écran de la page.
+## Auteur
 
-Exemple (optionnel) :
-`![Aperçu](images/preview.png)`
-
----
-
-## 👤 Auteur
 Gad Mokata
 
----
-
-## 💻 4. Initialiser Git (si tu travailles en local)
-
-Dans ton dossier :
+## Git (démarrage local)
 
 ```bash
 git init
@@ -69,23 +53,8 @@ git remote add origin https://github.com/TON-USERNAME/taskflow-landing-page.git
 git push -u origin main
 ```
 
----
+## Pistes d’amélioration
 
-## 🧠 5. Conseils pour impressionner le recruteur
-- Utilise des balises HTML sémantiques :
-  - `<header>`, `<section>`, `<main>`, `<footer>`
-- Nomme bien tes classes CSS :
-  - `.hero`, `.features`, `.pricing`, etc.
-- Ajoute :
-  - `hover` sur les boutons
-  - des `transitions` fluides
-- Pense mobile-first 📱
-
----
-
-## 🔥 Bonus (fortement recommandé)
-- Ajout d’animations CSS
-- Effets hover soignés
-- Attention aux détails
-- Bonne hiérarchie visuelle
-
+- Animations CSS discrètes
+- Petites interactions en JavaScript plus tard
+- Branchement à un backend pour le formulaire
