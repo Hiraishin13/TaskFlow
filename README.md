@@ -1,4 +1,4 @@
-# TaskFlow – Landing page
+# TaskFlow  Landing page
 
 Landing page responsive pour **TaskFlow**, application de gestion de tâches pour freelances et petites équipes.
 
@@ -34,27 +34,6 @@ Projet réalisé dans le cadre d’un test technique pour un poste de développe
 └── README.md
 ```
 
-## Aperçu
-
-Ajouter une capture d’écran ici si besoin, par exemple `images/preview.png`.
-
 ## Auteur
 
 Gad Mokata
-
-## Git (démarrage local)
-
-```bash
-git init
-git add .
-git commit -m "Initial commit - TaskFlow landing page"
-git branch -M main
-git remote add origin https://github.com/TON-USERNAME/taskflow-landing-page.git
-git push -u origin main
-```
-
-## Pistes d’amélioration
-
-- Animations CSS discrètes
-- Petites interactions en JavaScript plus tard
-- Branchement à un backend pour le formulaire
